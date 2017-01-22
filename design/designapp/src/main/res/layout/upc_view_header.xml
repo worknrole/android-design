@@ -40,6 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/upc_name"
             android:layout_toRightOf="@id/upc_actorBtn"
+            android:layout_toEndOf="@id/upc_actorBtn"
             android:text="@string/upc_textProducer"/>
 
         <TextView
@@ -57,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/upc_actorBtn"
             android:layout_toRightOf="@id/upc_movies"
+            android:layout_toEndOf="@id/upc_movies"
             android:text="56"/>
 
         <TextView
@@ -66,6 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/upc_actorBtn"
             android:layout_toRightOf="@id/upc_moviesNb"
+            android:layout_toEndOf="@id/upc_moviesNb"
             android:text="@string/upc_textPlay"/>
 
         <TextView
@@ -75,6 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/upc_actorBtn"
             android:layout_toRightOf="@id/upc_plays"
+            android:layout_toEndOf="@id/upc_plays"
             android:text="29"/>
 
         <TextView
@@ -84,6 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/upc_actorBtn"
             android:layout_toRightOf="@id/upc_playsNb"
+            android:layout_toEndOf="@id/upc_playsNb"
             android:text="@string/upc_textMusical"/>
 
         <TextView
@@ -93,6 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/upc_actorBtn"
             android:layout_toRightOf="@id/upc_musicals"
+            android:layout_toEndOf="@id/upc_musicals"
             android:text="11"/>
 
     </com.worknrole.design.ui.userprofileconcept.view.DiagonalHeaderView>
@@ -117,8 +123,10 @@
         <LinearLayout
             android:orientation="vertical"
             android:paddingLeft="30dp"
+            android:paddingStart="30dp"
             android:paddingTop="15dp"
             android:paddingRight="15dp"
+            android:paddingEnd="15dp"
             android:paddingBottom="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">

@@ -55,6 +55,8 @@
     <!-- Strings -->
     <string name="title_activity_upc">UPCActivity</string>
 
+    <string name="upc_descMoviePicture">A movie picture</string>
+
     <string name="upc_textName">Hugh Jackman</string>
     <string name="upc_textActor">Actor</string>
     <string name="upc_textProducer">Producer</string>

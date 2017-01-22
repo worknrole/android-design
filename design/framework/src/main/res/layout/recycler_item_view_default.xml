@@ -7,6 +7,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is a default view"/>
+        android:text="@string/default_textView"/>
 
 </LinearLayout>

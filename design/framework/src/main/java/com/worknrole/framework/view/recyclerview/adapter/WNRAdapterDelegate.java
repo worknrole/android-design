@@ -50,7 +50,7 @@ public abstract class WNRAdapterDelegate<ItemType extends WNRItem> {
 
     /**
      * Return the item view type manage by this delegate
-     * @return
+     * @return the item view type manage by this delegate
      */
     public int getItemViewType() {
         return mViewType;
@@ -60,7 +60,7 @@ public abstract class WNRAdapterDelegate<ItemType extends WNRItem> {
      * Create a custom ViewHolder for the current view type
      * @param parent        The parent view
      * @param viewType      The current item view type
-     * @return
+     * @return a custom ViewHolder for the current view type
      */
     public WNRViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new WNRViewHolder(LayoutInflater.from(

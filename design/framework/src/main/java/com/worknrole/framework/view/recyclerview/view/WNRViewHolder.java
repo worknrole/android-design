@@ -22,7 +22,7 @@ public class WNRViewHolder extends RecyclerView.ViewHolder {
     //region Constructor
     /**
      * A simple constructor
-     * @param itemView
+     * @param itemView The view of a specific item
      */
     public WNRViewHolder(View itemView) {
         super(itemView);

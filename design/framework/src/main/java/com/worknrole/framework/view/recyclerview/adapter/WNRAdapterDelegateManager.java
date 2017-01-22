@@ -37,7 +37,7 @@ class WNRAdapterDelegateManager<ItemType extends WNRItem> {
 
     /**
      * Add a new adapter delegate if it doesn't already exist
-     * @param newDelegate
+     * @param newDelegate   The specfic adapter delegate to add
      */
     public void addAdapter(WNRAdapterDelegate newDelegate) {
         if (mAdapterDelegateList.indexOfValue(newDelegate) < 0) {
@@ -69,7 +69,7 @@ class WNRAdapterDelegateManager<ItemType extends WNRItem> {
      * @return A {@link WNRViewHolder} created according to the item view type
      */
     public WNRViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        WNRAdapterDelegate delegate = null;
+        WNRAdapterDelegate delegate;
         if ((delegate = mAdapterDelegateList.get(viewType)) == null) {
             throw new NullPointerException("[onCreateViewHolder] This view type has no adapter delegate associated");
         }

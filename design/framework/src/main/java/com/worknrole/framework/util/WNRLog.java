@@ -4,11 +4,13 @@ import android.util.Log;
 
 /**
  * Created by worknrole on 13/01/17.
+ *
+ * Class managing custom logs
  */
 
 public class WNRLog {
 
-    private static final boolean ENABLE_LOG = true;
+    private static final boolean ENABLE_LOG = false;
 
     public static void debug(Class clazz, String message) {
         if(ENABLE_LOG) Log.d(clazz.getSimpleName() + "_WNRDebug", message);
