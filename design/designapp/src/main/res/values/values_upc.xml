@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ***** USER PROFILE CONTENT : custom values -->
+    <!-- Theme -->
+    <style name="UPCTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/upc_colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="UPCBtn" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:background">@drawable/upc_button_rounded</item>
+    </style>
+
+    <style name="UPCHeaderText" parent="TextAppearance.AppCompat">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="UPCHeaderNb" parent="UPCHeaderText">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="UPCFloatingBtn" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_margin">16dp</item>
+        <item name="backgroundTint">@color/upc_colorPrimaryDark</item>
+    </style>
+
+
+    <!-- Colors -->
+    <color name="upc_colorPrimaryDark">#383838</color>
+    <color name="upc_colorContentBackground">#fafafa</color>
+    <color name="upc_colorDarkHeaderFilter">#40000000</color>
+
+
+    <!-- Dimensions -->
+    <dimen name="upc_dimenFirstRVItemOffsets">45dp</dimen>
+    <dimen name="upc_dimenRVItemOffsets">20dp</dimen>
+
+
+    <!-- Strings -->
+    <string name="title_activity_upc">UPCActivity</string>
+
+    <string name="upc_textName">Hugh Jackman</string>
+    <string name="upc_textActor">Actor</string>
+    <string name="upc_textProducer">Producer</string>
+    <string name="upc_textMovie">Movies</string>
+    <string name="upc_textPlay">Plays</string>
+    <string name="upc_textMusical">Musicals</string>
+    <string name="upc_textFollower">Followers</string>
+    <string name="upc_textFollowing">Following</string>
+    <string name="upc_defaultValue">0</string>
+    <string name="upc_textDescription">
+        [Wikipedia :] Hugh Michael Jackman (born 12 October 1968) is an Australian actor, singer and producer.
+        Jackman has won international recognition for his roles in variety of film genres. He is
+        known for his long-running role as Wolverine in the X-Men film series, as well as for his
+        lead roles in films such as the romantic-comedy fantasy Kate &#38; Leopold (2001), the action-horror
+        film Van Helsing (2004), the magic-themed drama The Prestige (2006), the epic fantasy drama The
+        Fountain (2006), the epic historical romantic drama Australia (2008), the film version of
+        Les Misérables (2012), and the thriller Prisoners (2013). His work in Les Misérables earned
+        him his first Academy Award nomination for Best Actor and his first Golden Globe Award for
+        Best Actor – Motion Picture Musical or Comedy in 2013.
+    </string>
+</resources>

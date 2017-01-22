@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.compileVersion
+    buildToolsVersion project.buildVersion
+    defaultConfig {
+        applicationId "com.worknrole.design"
+        minSdkVersion project.minSDK
+        targetSdkVersion project.targetSDK
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':framework')
+    compile 'com.uncopt:android.justified:1.0'
+}
