@@ -12,6 +12,7 @@
         <activity
             android:name=".ui.userprofileconcept.UPCActivity"
             android:label="@string/title_activity_upc"
+            android:screenOrientation="portrait"
             android:theme="@style/UPCTheme">
 
             <intent-filter>
