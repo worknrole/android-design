@@ -17,6 +17,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 import com.worknrole.design.R;
@@ -76,6 +78,10 @@ public class DiagonalHeaderView extends RelativeLayout {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
+        WindowManager wm = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics metrics = new DisplayMetrics();
+        wm.getDefaultDisplay().getMetrics(metrics);
 
         if (mDrawable != null) {
             // Draw diagonal bitmap
@@ -145,28 +151,27 @@ public class DiagonalHeaderView extends RelativeLayout {
     /**
      * Draw the quadrilateral with a diagonal draws at the bottom with a Bitmap
      * @param bitmap    The bitmap to draw into the quadrilateral
-     * @param size      The size of the quadrilateral
+     * @param width      The width of the quadrilateral
      * @return  The bitmap draws into the quadrilateral
      */
-    private Bitmap createDiagonalBitmap(Bitmap bitmap, int size) {
-        Bitmap circleBitmap;
-        Bitmap tmpBitmap = (bitmap.getWidth() > size || bitmap.getHeight() > size) ?
-                Bitmap.createScaledBitmap(bitmap, getWidth(), getHeight(), false) :
-                bitmap;
+    private Bitmap createDiagonalBitmap(Bitmap bitmap, int width) {
+        Bitmap quadBitmap;
+        float scale = (bitmap.getWidth() < width) ? width/bitmap.getWidth() : 1f;
+        Bitmap tmpBitmap = Bitmap.createScaledBitmap(bitmap, width, (int)(getHeight()*scale), false);
 
-        int width = tmpBitmap.getWidth();
-        int height = tmpBitmap.getHeight();
-        circleBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        int tmpWidth = tmpBitmap.getWidth();
+        int tmpHeight = tmpBitmap.getHeight();
+        quadBitmap = Bitmap.createBitmap(tmpWidth, tmpHeight, Bitmap.Config.ARGB_8888);
 
 
-        Canvas canvas = new Canvas(circleBitmap);
-        Rect rect = new Rect(0, 0, width, height);
+        Canvas canvas = new Canvas(quadBitmap);
+        Rect rect = new Rect(0, 0, tmpWidth, tmpHeight);
         Paint backPaint = drawDiagonalShape(canvas, Color.WHITE);
         backPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         canvas.drawBitmap(tmpBitmap, rect, rect, backPaint);
 
         tmpBitmap.recycle();
-        return circleBitmap;
+        return quadBitmap;
     }
     //endregion
 }
