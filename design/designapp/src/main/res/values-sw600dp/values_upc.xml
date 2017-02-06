@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ***** USER PROFILE CONTENT : custom values for tablets -->
+    <!-- Dimensions -->
+    <dimen name="upc_normalTextSize">13sp</dimen>
+    <dimen name="upc_marginLeft">100dp</dimen>
+    <dimen name="upc_circledImage">100dp</dimen>
+</resources>

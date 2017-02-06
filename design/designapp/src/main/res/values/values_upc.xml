@@ -17,13 +17,13 @@
         <item name="android:paddingRight">10dp</item>
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">@dimen/upc_normalTextSize</item>
         <item name="android:background">@drawable/upc_button_rounded</item>
     </style>
 
     <style name="UPCHeaderText" parent="TextAppearance.AppCompat">
         <item name="textAllCaps">true</item>
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">@dimen/upc_normalTextSize</item>
         <item name="android:layout_marginTop">30dp</item>
         <item name="android:inputType">number</item>
         <item name="android:textColor">@android:color/white</item>
@@ -48,8 +48,11 @@
 
 
     <!-- Dimensions -->
+    <dimen name="upc_normalTextSize">11sp</dimen>
     <dimen name="upc_dimenFirstRVItemOffsets">45dp</dimen>
     <dimen name="upc_dimenRVItemOffsets">20dp</dimen>
+    <dimen name="upc_circledImage">80dp</dimen>
+    <dimen name="upc_marginLeft">0dp</dimen>
 
 
     <!-- Strings -->
