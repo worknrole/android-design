@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion project.compileVersion
+    buildToolsVersion project.buildVersion
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 25
+        minSdkVersion project.minSDK
+        targetSdkVersion project.targetSDK
         versionCode 1
         versionName "1.0"
 
@@ -25,12 +25,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    // Test
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    testCompile 'junit:junit:4.12'
-
     // Support
     compile 'com.android.support:appcompat-v7:' + project.supportVersion
     compile 'com.android.support:palette-v7:' + project.supportVersion
@@ -38,4 +32,8 @@ dependencies {
     compile 'com.android.support:design:' + project.supportVersion
     compile 'com.android.support:percent:' + project.supportVersion
     compile 'com.android.support:cardview-v7:' + project.supportVersion
+    compile 'com.android.support:support-vector-drawable:' + project.supportVersion
+    compile 'com.android.support:animated-vector-drawable:' + project.supportVersion
+
+    compile 'org.greenrobot:eventbus:' + project.busVersion
 }
