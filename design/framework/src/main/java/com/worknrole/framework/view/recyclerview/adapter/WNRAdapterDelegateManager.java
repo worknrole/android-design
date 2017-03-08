@@ -53,7 +53,8 @@ class WNRAdapterDelegateManager<ItemType extends WNRItem> {
     public int getItemViewType(ItemType item) {
         int viewType = 0;
         for (int index=0; index<mAdapterDelegateList.size(); index++) {
-            WNRAdapterDelegate delegate = mAdapterDelegateList.get(index);
+            int key = mAdapterDelegateList.keyAt(index);
+            WNRAdapterDelegate delegate = mAdapterDelegateList.get(key);
             if (delegate != null && delegate.isForItem(item)) {
                 viewType = delegate.getItemViewType();
                 break;
@@ -84,7 +85,8 @@ class WNRAdapterDelegateManager<ItemType extends WNRItem> {
     public void onBindViewHolder(WNRViewHolder holder, ItemType item) {
         boolean foundDelegate = false;
         for (int index=0; index < mAdapterDelegateList.size(); index++) {
-            WNRAdapterDelegate delegate = mAdapterDelegateList.get(index);
+            int key = mAdapterDelegateList.keyAt(index);
+            WNRAdapterDelegate delegate = mAdapterDelegateList.get(key);
             if (delegate != null && delegate.isForItem(item)) {
                 foundDelegate = true;
                 delegate.onBinViewHolder(holder, item);
