@@ -4,7 +4,7 @@ ext {
     buildVersion = '25.0.2'
     minSDK = 16
     targetSDK = 25
-    supportVersion = '25.1.0'
+    supportVersion = '25.1.1'
 
     glideVersion = '3.7.0'
 }

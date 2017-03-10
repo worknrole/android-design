@@ -24,4 +24,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':framework')
     compile 'com.uncopt:android.justified:1.0'
+    compile 'com.android.support:appcompat-v7:25.1.1'
 }
