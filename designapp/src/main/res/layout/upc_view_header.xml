@@ -59,7 +59,7 @@
             android:layout_below="@id/upc_actorBtn"
             android:layout_toRightOf="@id/upc_movies"
             android:layout_toEndOf="@id/upc_movies"
-            android:text="56"/>
+            android:text="@string/upc_nbMovies"/>
 
         <TextView
             style="@style/UPCHeaderText"
@@ -79,7 +79,7 @@
             android:layout_below="@id/upc_actorBtn"
             android:layout_toRightOf="@id/upc_plays"
             android:layout_toEndOf="@id/upc_plays"
-            android:text="29"/>
+            android:text="@string/upc_nbPlays"/>
 
         <TextView
             style="@style/UPCHeaderText"
@@ -99,7 +99,7 @@
             android:layout_below="@id/upc_actorBtn"
             android:layout_toRightOf="@id/upc_musicals"
             android:layout_toEndOf="@id/upc_musicals"
-            android:text="11"/>
+            android:text="@string/upc_nbMusicals"/>
 
     </com.worknrole.design.ui.userprofileconcept.view.DiagonalHeaderView>
     
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="11sp"
-                android:text="3.5K"/>
+                android:text="@string/upc_followers"/>
 
         </LinearLayout>
 
@@ -169,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="11sp"
-                android:text="1.9K"/>
+                android:text="@string/upc_following"/>
 
         </LinearLayout>
 

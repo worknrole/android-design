@@ -1,6 +1,5 @@
 package com.worknrole.framework.view.image;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -11,9 +10,8 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 /**
  * Created by worknrole on 22/01/17.
@@ -23,7 +21,7 @@ import android.widget.ImageView;
  * ~ Many things to add and update ~
  */
 
-public class CircledImageView extends ImageView {
+public class CircledImageView extends AppCompatImageView {
 
     //region Constructors
     public CircledImageView(Context context) {
@@ -36,11 +34,6 @@ public class CircledImageView extends ImageView {
 
     public CircledImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public CircledImageView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
     }
     //endregion
 

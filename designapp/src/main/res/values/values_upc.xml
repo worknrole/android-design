@@ -68,7 +68,11 @@
     <string name="upc_textMusical">Musicals</string>
     <string name="upc_textFollower">Followers</string>
     <string name="upc_textFollowing">Following</string>
-    <string name="upc_defaultValue">0</string>
+    <string name="upc_nbMovies">56</string>
+    <string name="upc_nbPlays">29</string>
+    <string name="upc_nbMusicals">11</string>
+    <string name="upc_followers">3.5K</string>
+    <string name="upc_following">1.9K</string>
     <string name="upc_textDescription">
         [Wikipedia :] Hugh Michael Jackman (born 12 October 1968) is an Australian actor, singer and producer.
         Jackman has won international recognition for his roles in variety of film genres. He is
