@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.worknrole.design.ui.qplanningapp.view.CalendarItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unknown"
+        android:textColor="@color/white"/>
+
+</com.worknrole.design.ui.qplanningapp.view.CalendarItemView>

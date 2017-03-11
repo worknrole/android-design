@@ -24,6 +24,12 @@
             android:label="@string/title_activity_upc"
             android:screenOrientation="portrait"
             android:theme="@style/UPCTheme"/>
+
+        <activity android:name=".ui.qplanningapp.QPlanningAppActivity"
+                  android:label="@string/title_ab_qpa"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/QPATheme">
+        </activity>
     </application>
 
 </manifest>

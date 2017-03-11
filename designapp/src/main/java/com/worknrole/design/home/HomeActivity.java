@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.worknrole.design.R;
 import com.worknrole.design.ui.userprofileconcept.UPCActivity;
+import com.worknrole.design.ui.qplanningapp.QPlanningAppActivity;
 import com.worknrole.framework.view.recyclerview.adapter.WNRAdapter;
 import com.worknrole.framework.view.recyclerview.item.WNRItem;
 
@@ -45,6 +46,7 @@ public class HomeActivity extends AppCompatActivity {
 
         List<WNRItem> items = new ArrayList<>();
         items.add(new HomeItem(getString(R.string.title_activity_upc), UPCActivity.class));
+        items.add(new HomeItem(getString(R.string.title_activity_qpa), QPlanningAppActivity.class));
         adapter.addItems(items);
     }
     //endregion
