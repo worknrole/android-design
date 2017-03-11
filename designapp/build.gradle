@@ -32,4 +32,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':framework')
     compile 'com.uncopt:android.justified:' + project.justifiedVersion
+    compile 'com.jakewharton:butterknife:' + project.butterknifeVersion
+    annotationProcessor 'com.jakewharton:butterknife-compiler:' + project.butterknifeVersion
 }

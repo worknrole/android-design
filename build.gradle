@@ -9,6 +9,7 @@ ext {
     justifiedVersion = '1.0'
     glideVersion = '3.7.0'
     busVersion = '3.0.0'
+    butterknifeVersion = '8.5.1'
 }
 
 buildscript {
