@@ -14,6 +14,9 @@
     <string name="title_activity_qpa">QPlanning App</string>
     <string name="title_ab_qpa">Todays Plan</string>
     <string name="title_ab_2_qpa">Social Plan</string>
+    <string name="today_nb_plans">4 plans today</string>
+    <string name="today_day">20</string>
+    <string name="today_month">March</string>
     <string name="social_name_1">Scarlett Johansson</string>
     <string name="social_name_2">Robert Downey Jr.</string>
     <string name="social_name_3">Chris Evans</string>
@@ -52,4 +55,10 @@
     <dimen name="slide_line_max_translation_X">60dp</dimen>
     <dimen name="qplanningapp_margin_for_slide">3dp</dimen>
     <dimen name="qplanningapp_slide_menu">90dp</dimen>
+    <dimen name="qplanningapp_circle_day_x">23dp</dimen>
+    <dimen name="qplanningapp_circle_day_y">42dp</dimen>
+    <dimen name="qplanningapp_circle_month_x">20dp</dimen>
+    <dimen name="qplanningapp_circle_month_y">60dp</dimen>
+    <dimen name="qplanningapp_circle_day_size">30dp</dimen>
+    <dimen name="qplanningapp_circle_month_size">13dp</dimen>
 </resources>
