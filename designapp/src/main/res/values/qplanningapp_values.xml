@@ -44,6 +44,7 @@
     <!-- Colors -->
     <color name="colorBackgroundQPA">@color/greyLight</color>
     <color name="colorCircleDay">#fe70cb</color>
+    <color name="colorBarIcon">#b9b9b9</color>
 
 
     <!-- Dimension -->
