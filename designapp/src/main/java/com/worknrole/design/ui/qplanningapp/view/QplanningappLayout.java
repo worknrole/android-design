@@ -11,6 +11,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.animation.AccelerateInterpolator;
+import android.widget.TextView;
 
 import com.worknrole.design.R;
 import com.worknrole.design.ui.qplanningapp.fragment.SocialFragment;
@@ -24,6 +26,8 @@ public class QplanningappLayout extends ViewPager {
 
     //region Properties
     private FloatingActionButton mEditionBtn;
+    private TextView mToolbarTitle;
+    private View mLine;
     //endregion
 
 
@@ -67,16 +71,28 @@ public class QplanningappLayout extends ViewPager {
     //region Initializer
     private ViewPager.OnPageChangeListener createOnPageChangeListener() {
         return new ViewPager.OnPageChangeListener() {
+            private int maxTranslationX = getResources().getDimensionPixelOffset(R.dimen.slide_line_max_translation_X);
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                if (mLine != null) {
+                    float value = maxTranslationX * positionOffset;
+                    if (positionOffset == 0) {
+                        value = (position == 0) ? 0.0f : maxTranslationX;
+                    }
+                    mLine.animate()
+                            .translationX(value)
+                            .setInterpolator(new AccelerateInterpolator())
+                            .setDuration(0)
+                            .start();
+                }
             }
 
             @Override
             public void onPageSelected(final int position) {
-                if (getContext() instanceof AppCompatActivity) {
-                    ((AppCompatActivity)getContext()).getSupportActionBar().setTitle(
-                            getResources().getString(
-                                    position == 0 ? R.string.title_ab_qpa : R.string.title_ab_2_qpa));
+
+                if (mToolbarTitle != null) {
+                    mToolbarTitle.setText(getResources().getString(
+                            position == 0 ? R.string.title_ab_qpa : R.string.title_ab_2_qpa));
                 }
 
                 if (mEditionBtn != null) {
@@ -116,6 +132,14 @@ public class QplanningappLayout extends ViewPager {
                 Snackbar.make(QplanningappLayout.this, getResources().getString(R.string.yes), Snackbar.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void setSlideLine(View line) {
+        mLine = line;
+    }
+
+    public void setToolbarTitle(TextView title) {
+        mToolbarTitle = title;
     }
     //endregion
 }

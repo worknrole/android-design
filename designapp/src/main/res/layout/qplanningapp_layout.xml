@@ -29,11 +29,7 @@
             android:background="@android:color/transparent"
             app:elevation="0dp">
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@drawable/qplanningapp_gradient_toolbar" />
+            <include layout="@layout/qplanningapp_toolbar"/>
 
         </android.support.design.widget.AppBarLayout>
 

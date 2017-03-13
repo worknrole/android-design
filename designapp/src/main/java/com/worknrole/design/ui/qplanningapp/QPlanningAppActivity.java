@@ -8,6 +8,8 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.worknrole.design.R;
 import com.worknrole.design.ui.qplanningapp.view.QplanningappLayout;
@@ -29,6 +31,12 @@ public class QPlanningAppActivity extends AppCompatActivity {
 
     @BindView(R.id.view_pager)
     QplanningappLayout mLayout;
+
+    @BindView(R.id.line_slide)
+    View mSlideLine;
+
+    @BindView(R.id.toolbar_title)
+    TextView mToolbarTitle;
 
     private ActionBarDrawerToggle mDrawerToggle;
     //endregion
@@ -71,6 +79,8 @@ public class QPlanningAppActivity extends AppCompatActivity {
         mDrawerLayout.addDrawerListener(mDrawerToggle);
 
         mLayout.setEditionBtn(mActionButton);
+        mLayout.setSlideLine(mSlideLine);
+        mLayout.setToolbarTitle(mToolbarTitle);
     }
     //endregion
 }

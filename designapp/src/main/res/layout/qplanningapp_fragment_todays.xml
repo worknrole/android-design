@@ -38,7 +38,8 @@
             android:layout_width="0dp"
             app:layout_widthPercent="67%"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"/>
+            android:background="@android:color/transparent"
+            android:overScrollMode="never"/>
 
     </android.support.percent.PercentRelativeLayout>
 
