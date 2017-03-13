@@ -10,6 +10,7 @@ ext {
     glideVersion = '3.7.0'
     busVersion = '3.0.0'
     butterknifeVersion = '8.5.1'
+    picassoVersion = '2.5.2'
 }
 
 buildscript {

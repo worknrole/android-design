@@ -15,49 +15,12 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
 
-        <com.worknrole.design.ui.qplanningapp.view.QPALayout
+        <com.worknrole.design.ui.qplanningapp.view.QplanningappLayout
+            android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorBackgroundQPA"
-            tools:context="com.worknrole.design.ui.qplanningapp.QPAActivity">
-
-            <!-- CALENDAR -->
-            <android.support.percent.PercentRelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="280dp"
-                android:paddingTop="80dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="15dp"
-                android:background="@drawable/qplanningapp_gradient">
-
-                <LinearLayout
-                    android:id="@+id/current_day_layout"
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    app:layout_widthPercent="33%"
-                    android:layout_height="match_parent"
-                    android:gravity="center">
-
-                    <com.worknrole.framework.view.shape.CircleView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:circleColor="#fe70cb"
-                        android:padding="15dp"/>
-                </LinearLayout>
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/recycler_view_calendar"
-                    android:layout_toRightOf="@id/current_day_layout"
-                    android:layout_toEndOf="@id/current_day_layout"
-                    android:layout_width="0dp"
-                    app:layout_widthPercent="67%"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"/>
-
-            </android.support.percent.PercentRelativeLayout>
-
-        </com.worknrole.design.ui.qplanningapp.view.QPALayout>
+            tools:context="com.worknrole.design.ui.qplanningapp.QPAActivity"/>
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/main.appbar"
@@ -70,15 +33,9 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@android:color/transparent" />
+                android:background="@drawable/qplanningapp_gradient_toolbar" />
 
         </android.support.design.widget.AppBarLayout>
-
-        <!-- PLAN -->
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/current_plan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
 
         <!-- FLOATING BUTTON: EDITION -->
         <android.support.design.widget.FloatingActionButton

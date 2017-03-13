@@ -44,4 +44,5 @@ dependencies {
     compile 'com.android.support:animated-vector-drawable:' + project.supportVersion
 
     compile 'org.greenrobot:eventbus:' + project.busVersion
+    compile 'com.squareup.picasso:picasso:' + project.picassoVersion
 }

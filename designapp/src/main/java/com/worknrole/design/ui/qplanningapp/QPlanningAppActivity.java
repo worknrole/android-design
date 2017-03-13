@@ -2,6 +2,7 @@ package com.worknrole.design.ui.qplanningapp;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.worknrole.design.R;
+import com.worknrole.design.ui.qplanningapp.view.QplanningappLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,6 +23,12 @@ public class QPlanningAppActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
+
+    @BindView(R.id.edition)
+    FloatingActionButton mActionButton;
+
+    @BindView(R.id.view_pager)
+    QplanningappLayout mLayout;
 
     private ActionBarDrawerToggle mDrawerToggle;
     //endregion
@@ -61,6 +69,8 @@ public class QPlanningAppActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.drawerOpen, R.string.drawerClose);
         mDrawerLayout.addDrawerListener(mDrawerToggle);
+
+        mLayout.setEditionBtn(mActionButton);
     }
     //endregion
 }

@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.worknrole.design.R;
-import com.worknrole.design.ui.qplanningapp.view.adapter.CalendarItem;
+import com.worknrole.design.ui.qplanningapp.item.CalendarItem;
 import com.worknrole.framework.view.recyclerview.view.ItemViewUpdater;
 
 import java.util.Arrays;

@@ -1,9 +1,10 @@
-package com.worknrole.design.ui.qplanningapp.view.adapter;
+package com.worknrole.design.ui.qplanningapp.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.worknrole.design.R;
+import com.worknrole.design.ui.qplanningapp.item.CalendarItem;
 import com.worknrole.framework.view.recyclerview.adapter.WNRAdapterDelegate;
 import com.worknrole.framework.view.recyclerview.item.WNRItem;
 import com.worknrole.framework.view.recyclerview.view.WNRViewHolder;

@@ -1,17 +1,16 @@
-package com.worknrole.design.ui.qplanningapp.view;
+package com.worknrole.design.ui.qplanningapp.fragment;
 
-import android.annotation.TargetApi;
-import android.content.Context;
-import android.os.Build;
-import android.support.annotation.Nullable;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.AttributeSet;
-import android.widget.RelativeLayout;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.worknrole.design.R;
-import com.worknrole.design.ui.qplanningapp.view.adapter.CalendarAdapterDelegate;
-import com.worknrole.design.ui.qplanningapp.view.adapter.CalendarItem;
+import com.worknrole.design.ui.qplanningapp.adapter.CalendarAdapterDelegate;
+import com.worknrole.design.ui.qplanningapp.item.CalendarItem;
 import com.worknrole.framework.view.recyclerview.adapter.WNRAdapter;
 import com.worknrole.framework.view.recyclerview.item.WNRItem;
 
@@ -22,10 +21,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by worknrole on 10/03/17.
+ * Created by worknrole on 11/03/17.
  */
 
-public class QPALayout extends RelativeLayout {
+public class TodaysFragment extends Fragment {
 
     //region Properties
     @BindView(R.id.recycler_view_calendar)
@@ -33,33 +32,13 @@ public class QPALayout extends RelativeLayout {
     //endregion
 
 
-    //region Constructors
-    public QPALayout(Context context) {
-        super(context);
-    }
-
-    public QPALayout(Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs);
-    }
-
-    public QPALayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public QPALayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-    }
-    //endregion
-
-
     //region Lifecycle
     @Override
-    protected void onFinishInflate() {
-        super.onFinishInflate();
-        ButterKnife.bind(this);
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.qplanningapp_fragment_todays, container, false);
+        ButterKnife.bind(this, rootView);
         initialize();
+        return rootView;
     }
     //endregion
 

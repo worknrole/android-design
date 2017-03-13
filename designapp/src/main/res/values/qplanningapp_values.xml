@@ -13,6 +13,22 @@
     <!-- Strings -->
     <string name="title_activity_qpa">QPlanning App</string>
     <string name="title_ab_qpa">Todays Plan</string>
+    <string name="title_ab_2_qpa">Social Plan</string>
+    <string name="social_name_1">Scarlett Johansson</string>
+    <string name="social_name_2">Robert Downey Jr.</string>
+    <string name="social_name_3">Chris Evans</string>
+    <string name="social_name_4">Chris Hemsworth</string>
+    <string name="social_name_5">Gwyneth Paltrow</string>
+    <string name="social_description_1">Planning for new event at Vegas Club with buffet dinner on coming week.</string>
+    <string name="social_description_2">We are planning to visit Hollywood city for have some fun...</string>
+    <string name="social_description_3">Hey! I am organising a school fund for help poor buying winter clothes...</string>
+    <string name="social_description_4">I am going to arrange a rock metal band party tomorrow. Let me know...</string>
+    <string name="social_description_5">I am bored to see all above plans! Lets go to moon and have some adventure</string>
+    <string name="social_date_1">just now</string>
+    <string name="social_date_2">2 hrs</string>
+    <string name="social_date_3">7 hrs</string>
+    <string name="social_date_4">1 day</string>
+    <string name="social_date_5">4 days</string>
 
     <string-array name="calendar_day">
         <item>S</item>
@@ -28,4 +44,8 @@
     <!-- Colors -->
     <color name="colorBackgroundQPA">@color/greyLight</color>
     <color name="colorCircleDay">#fe70cb</color>
+
+
+    <!-- Dimension -->
+    <dimen name="social_recycler_view_margin">15dp</dimen>
 </resources>

@@ -10,8 +10,13 @@
     <!-- Strings -->
     <string name="title_activity_home">android-design</string>
     <string name="unknown">Unknown</string>
+    <string name="yes">Yes!</string>
 
 
     <!-- Colors -->
     <color name="greyLight">#f7f8fb</color>
+
+
+    <!-- Dimensions -->
+    <dimen name="bottomBarSize">80dp</dimen>
 </resources>

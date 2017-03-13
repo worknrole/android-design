@@ -1,4 +1,4 @@
-package com.worknrole.design.ui.qplanningapp.view.adapter;
+package com.worknrole.design.ui.qplanningapp.item;
 
 import com.worknrole.framework.view.recyclerview.item.WNRItem;
 

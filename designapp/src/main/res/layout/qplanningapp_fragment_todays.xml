@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!-- CALENDAR -->
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingTop="80dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/qplanningapp_gradient">
+
+        <LinearLayout
+            android:id="@+id/current_day_layout"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            app:layout_widthPercent="33%"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:gravity="center_horizontal">
+
+            <com.worknrole.framework.view.shape.CircleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:circleColor="#fe70cb"
+                android:padding="15dp"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_calendar"
+            android:layout_toRightOf="@id/current_day_layout"
+            android:layout_toEndOf="@id/current_day_layout"
+            android:layout_width="0dp"
+            app:layout_widthPercent="67%"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <!-- PLANNING -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
