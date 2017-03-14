@@ -6,20 +6,22 @@
               android:layout_height="match_parent">
 
     <!-- CALENDAR -->
-    <android.support.percent.PercentRelativeLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="@dimen/qplanningapp_calendar_height"
         android:paddingTop="80dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingBottom="15dp"
+        android:weightSum="1"
         android:background="@drawable/qplanningapp_gradient">
 
         <LinearLayout
             android:id="@+id/current_day_layout"
             android:orientation="vertical"
             android:layout_width="0dp"
-            app:layout_widthPercent="33%"
+            android:layout_weight="0.33"
             android:layout_height="match_parent"
             android:paddingTop="20dp"
             android:gravity="center_horizontal">
@@ -41,15 +43,13 @@
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view_calendar"
-            android:layout_toRightOf="@id/current_day_layout"
-            android:layout_toEndOf="@id/current_day_layout"
             android:layout_width="0dp"
-            app:layout_widthPercent="67%"
+            android:layout_weight="0.67"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:overScrollMode="never"/>
 
-    </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
 
     <!-- PLANNING -->
     <android.support.v7.widget.RecyclerView

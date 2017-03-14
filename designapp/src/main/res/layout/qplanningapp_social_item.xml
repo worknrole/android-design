@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="20dp"
-    android:layout_marginTop="10dp"
+    android:layout_marginTop="@dimen/qplanningapp_social_item_margin_top"
     android:layout_marginRight="20dp">
 
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="@dimen/qplanningapp_social_item_padding">
 
         <com.worknrole.framework.view.image.CircledImageView
             android:id="@+id/picture"
@@ -54,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
             android:layout_below="@id/description"
             android:gravity="right|end"
             android:textSize="12sp"/>

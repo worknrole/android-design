@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/calendar_item"
     android:layout_width="match_parent"
-    android:layout_height="25dp"
+    android:layout_height="@dimen/qplanningapp_calendar_item_height"
     android:gravity="center">
 
     <com.worknrole.framework.view.shape.CircleView
@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="@string/unknown"
+        android:textSize="@dimen/qplanningapp_calendar_item_text_size"
         android:textColor="@color/white"/>
 
 </com.worknrole.design.ui.qplanningapp.view.CalendarItemView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="QplanningTextPlan">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="QplanningTextDescriptionPlan" parent="QplanningTextPlan">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorDescription</item>
+    </style>
+
+
+    <!-- Dimension -->
+    <dimen name="qplanningapp_slide_line_max_translation_X">80dp</dimen>
+    <dimen name="qplanningapp_margin_for_slide">3dp</dimen>
+    <dimen name="qplanningapp_slide_menu">110dp</dimen>
+    <dimen name="qplanningapp_circle_day_x">55dp</dimen>
+    <dimen name="qplanningapp_circle_day_y">90dp</dimen>
+    <dimen name="qplanningapp_circle_month_x">50dp</dimen>
+    <dimen name="qplanningapp_circle_month_y">130dp</dimen>
+    <dimen name="qplanningapp_circle_day_size">60dp</dimen>
+    <dimen name="qplanningapp_circle_month_size">26dp</dimen>
+    <dimen name="qplanningapp_calendar_height">330dp</dimen>
+    <dimen name="qplanningapp_calendar_item_height">35dp</dimen>
+    <dimen name="qplanningapp_calendar_item_text_size">18dp</dimen>
+    <dimen name="qplanningapp_social_item_margin_top">20dp</dimen>
+    <dimen name="qplanningapp_social_item_padding">20dp</dimen>
+</resources>
