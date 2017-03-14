@@ -24,7 +24,7 @@
             android:paddingTop="20dp"
             android:gravity="center_horizontal">
 
-            <com.worknrole.design.ui.qplanningapp.view.CircleTextView
+            <com.worknrole.design.ui.qplanningapp.view.QplanningappCircleTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:circleColor="#fe70cb"

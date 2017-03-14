@@ -23,41 +23,34 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
-            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_check_24px"
             android:background="?attr/selectableItemBackground"
-            android:layout_gravity="center"
-            android:tint="@color/colorBarIcon"
-            app:srcCompat="@drawable/ic_check_24px"/>
+            android:theme="@style/QplanningappBottomBarIcon"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_binoculars_24px"
+            android:background="?attr/selectableItemBackground"
+            android:theme="@style/QplanningappBottomBarIcon"/>
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_at_24px"
             android:background="?attr/selectableItemBackground"
-            android:layout_gravity="center"
-            android:tint="@color/colorBarIcon"
-            app:srcCompat="@drawable/ic_binoculars_24px"/>
+            android:theme="@style/QplanningappBottomBarIcon"/>
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
-            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_cocktail_24px"
             android:background="?attr/selectableItemBackground"
-            android:layout_gravity="center"
-            android:tint="@color/colorBarIcon"
-            app:srcCompat="@drawable/ic_at_24px"/>
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.25"
-            android:adjustViewBounds="true"
-            android:background="?attr/selectableItemBackground"
-            android:layout_gravity="center"
-            android:tint="@color/colorBarIcon"
-            app:srcCompat="@drawable/ic_cocktail_24px"/>
+            android:theme="@style/QplanningappBottomBarIcon"/>
 
     </LinearLayout>
 

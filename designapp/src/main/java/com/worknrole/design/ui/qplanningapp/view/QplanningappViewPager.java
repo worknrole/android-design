@@ -20,9 +20,13 @@ import com.worknrole.design.ui.qplanningapp.fragment.TodaysFragment;
 
 /**
  * Created by worknrole on 10/03/17.
+ *
+ * Main layout of the QPlanningApp
+ * This layout extends {@link ViewPager} and allows to slide between 2 fragments:
+ *  - {@link SocialFragment} and {@link TodaysFragment}
  */
 
-public class QplanningappLayout extends ViewPager {
+public class QplanningappViewPager extends ViewPager {
 
     //region Properties
     private FloatingActionButton mEditionBtn;
@@ -32,11 +36,11 @@ public class QplanningappLayout extends ViewPager {
 
 
     //region Constructors
-    public QplanningappLayout(Context context) {
+    public QplanningappViewPager(Context context) {
         super(context);
     }
 
-    public QplanningappLayout(Context context, @Nullable AttributeSet attrs) {
+    public QplanningappViewPager(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
     //endregion
@@ -69,6 +73,11 @@ public class QplanningappLayout extends ViewPager {
 
 
     //region Initializer
+
+    /**
+     * Create a PageChangeListener to handle events from the custom menu
+     * @return A {@link android.support.v4.view.ViewPager.OnPageChangeListener} handling custom menu events
+     */
     private ViewPager.OnPageChangeListener createOnPageChangeListener() {
         return new ViewPager.OnPageChangeListener() {
             private int maxTranslationX = getResources().getDimensionPixelOffset(R.dimen.slide_line_max_translation_X);
@@ -124,16 +133,34 @@ public class QplanningappLayout extends ViewPager {
         };
     }
 
+    /**
+     * Handle click on {@link FloatingActionButton}
+     * @param btn
+     */
     public void setEditionBtn(FloatingActionButton btn) {
         mEditionBtn = btn;
         mEditionBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(QplanningappLayout.this, getResources().getString(R.string.yes), Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(QplanningappViewPager.this, getResources().getString(R.string.yes), Snackbar.LENGTH_SHORT).show();
             }
         });
     }
 
+    /**
+     * Set Toolbar title from the custom toolbar view
+     * @param title The {@link TextView} to handle inside the {@link #createOnPageChangeListener()}
+     */
+    public void setToolbarTitle(TextView title) {
+        mToolbarTitle = title;
+    }
+
+    /**
+     * Set listener on all custom menu item and get the menu line to move during slide
+     * @param line          The line to move during slide
+     * @param todayBtn      The Todays icon to display {@link TodaysFragment}
+     * @param socialBtn     The Social icon to display {@link SocialFragment}
+     */
     public void setMenu(View line, View todayBtn, View socialBtn) {
         mLine = line;
 
@@ -152,10 +179,6 @@ public class QplanningappLayout extends ViewPager {
         });
 
 
-    }
-
-    public void setToolbarTitle(TextView title) {
-        mToolbarTitle = title;
     }
     //endregion
 }

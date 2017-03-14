@@ -9,6 +9,23 @@
         <item name="actionMenuTextColor">@android:color/white</item>
     </style>
 
+    <style name="QplanningappBottomBarIcon" parent="Widget.AppCompat.ImageButton">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:tint">@color/colorBarIcon</item>
+    </style>
+
+    <style name="QplanningTextPlan">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="QplanningTextDescriptionPlan" parent="QplanningTextPlan">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorDescription</item>
+    </style>
+
 
     <!-- Strings -->
     <string name="title_activity_qpa">QPlanning App</string>
@@ -68,6 +85,7 @@
     <color name="colorBarIcon">#b9b9b9</color>
     <color name="colorCircleDayItem">#a784ee</color>
     <color name="colorDescription">#aab6bc</color>
+    <color name="colorBorder">#e1e1e1</color>
 
 
     <!-- Dimension -->

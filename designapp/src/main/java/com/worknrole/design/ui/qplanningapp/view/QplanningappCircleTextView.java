@@ -12,24 +12,26 @@ import com.worknrole.framework.view.shape.CircleView;
 
 /**
  * Created by worknrole on 13/03/17.
+ *
+ * Static builder for circle and date
  */
 
-public class CircleTextView extends CircleView {
+public class QplanningappCircleTextView extends CircleView {
 
     //region Constructors
-    public CircleTextView(Context context) {
+    public QplanningappCircleTextView(Context context) {
         super(context);
     }
 
-    public CircleTextView(Context context, @Nullable AttributeSet attrs) {
+    public QplanningappCircleTextView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CircleTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public QplanningappCircleTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public CircleTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public QplanningappCircleTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
     //endregion

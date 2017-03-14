@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 import com.worknrole.design.R;
+import com.worknrole.design.ui.qplanningapp.item.CalendarItem;
 import com.worknrole.design.ui.qplanningapp.item.SocialItem;
 import com.worknrole.framework.view.recyclerview.view.ItemViewUpdater;
 
@@ -17,6 +18,8 @@ import butterknife.ButterKnife;
 
 /**
  * Created by worknrole on 13/03/17.
+ *
+ * View of a {@link SocialItemView}
  */
 
 public class SocialItemView extends CardView implements ItemViewUpdater<SocialItem> {
@@ -51,16 +54,13 @@ public class SocialItemView extends CardView implements ItemViewUpdater<SocialIt
     //endregion
 
 
-    //region Lifecycle
+    //region Lifecycle Updater
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
         ButterKnife.bind(this);
     }
-    //endregion
 
-
-    //region Updater
     @Override
     public void updateView(SocialItem item) {
         if (item != null) {

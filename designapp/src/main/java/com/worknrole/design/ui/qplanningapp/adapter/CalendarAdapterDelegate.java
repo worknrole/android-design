@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.worknrole.design.R;
+import com.worknrole.design.ui.qplanningapp.Qplanningapp;
 import com.worknrole.design.ui.qplanningapp.item.CalendarItem;
 import com.worknrole.framework.view.recyclerview.adapter.WNRAdapterDelegate;
 import com.worknrole.framework.view.recyclerview.item.WNRItem;
@@ -11,14 +12,16 @@ import com.worknrole.framework.view.recyclerview.view.WNRViewHolder;
 
 /**
  * Created by worknrole on 10/03/17.
+ *
+ * Adapter delegate for Todays Plan calendar
  */
-
 public class CalendarAdapterDelegate extends WNRAdapterDelegate {
 
-    private static final int DAY_ITEM = 0;
-
+    /**
+     * Default constructor for {@link CalendarItem}
+     */
     public CalendarAdapterDelegate() {
-        super(DAY_ITEM);
+        super(Qplanningapp.CALENDAR_ITEM);
     }
 
     @Override

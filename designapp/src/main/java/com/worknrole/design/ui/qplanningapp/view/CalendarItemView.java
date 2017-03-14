@@ -22,10 +22,13 @@ import butterknife.ButterKnife;
 
 /**
  * Created by worknrole on 10/03/17.
+ *
+ * View of a {@link CalendarItem}
  */
 
 public class CalendarItemView extends RelativeLayout implements ItemViewUpdater<CalendarItem> {
 
+    //region Properties
     @BindView(R.id.title)
     TextView mTitle;
 
@@ -34,7 +37,10 @@ public class CalendarItemView extends RelativeLayout implements ItemViewUpdater<
 
     @BindArray(R.array.calendar_day)
     String[] mCalendarDay;
+    //endregion
 
+
+    //region Constructors
     public CalendarItemView(Context context) {
         super(context);
     }
@@ -51,7 +57,10 @@ public class CalendarItemView extends RelativeLayout implements ItemViewUpdater<
     public CalendarItemView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
+    //endregion
 
+
+    //region Lifecycle and updater
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
@@ -71,4 +80,5 @@ public class CalendarItemView extends RelativeLayout implements ItemViewUpdater<
             }
         }
     }
+    //endregion
 }

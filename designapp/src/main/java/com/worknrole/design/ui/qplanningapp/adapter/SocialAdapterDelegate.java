@@ -4,6 +4,8 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.worknrole.design.R;
+import com.worknrole.design.ui.qplanningapp.Qplanningapp;
+import com.worknrole.design.ui.qplanningapp.item.CalendarItem;
 import com.worknrole.design.ui.qplanningapp.item.SocialItem;
 import com.worknrole.framework.view.recyclerview.adapter.WNRAdapterDelegate;
 import com.worknrole.framework.view.recyclerview.item.WNRItem;
@@ -11,14 +13,17 @@ import com.worknrole.framework.view.recyclerview.view.WNRViewHolder;
 
 /**
  * Created by worknrole on 13/03/17.
+ *
+ * Adapter delegate for Social Plan item
  */
 
 public class SocialAdapterDelegate extends WNRAdapterDelegate {
 
-    private static final int SOCIAL_ITEM = 0;
-
+    /**
+     * Default constructor for {@link SocialItem}
+     */
     public SocialAdapterDelegate() {
-        super(SOCIAL_ITEM);
+        super(Qplanningapp.SOCIAL_ITEM);
     }
 
     @Override

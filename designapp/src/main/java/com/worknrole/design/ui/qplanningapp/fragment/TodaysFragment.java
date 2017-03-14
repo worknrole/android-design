@@ -27,6 +27,8 @@ import butterknife.ButterKnife;
 
 /**
  * Created by worknrole on 11/03/17.
+ *
+ * Second fragment display inside the ViewPager describes by {@link com.worknrole.design.ui.qplanningapp.view.QplanningappViewPager}
  */
 
 public class TodaysFragment extends Fragment {
@@ -52,6 +54,10 @@ public class TodaysFragment extends Fragment {
 
 
     //region Initializer
+
+    /**
+     * Initialize static UI for the social fragment
+     */
     private void initialize() {
         // Create Calendar
         WNRAdapter adapter = new WNRAdapter();

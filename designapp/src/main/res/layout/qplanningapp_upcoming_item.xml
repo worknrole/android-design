@@ -39,10 +39,7 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="11sp"
-            android:paddingLeft="10dp"
-            android:paddingStart="10dp"
+            android:theme="@style/QplanningTextPlan"
             android:text="@string/upcoming_title_1"/>
 
         <TextView
@@ -53,11 +50,8 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:textSize="11sp"
-            android:paddingLeft="10dp"
-            android:paddingStart="10dp"
             android:text="@string/upcoming_description_1"
-            android:textColor="@color/colorDescription"/>
+            android:theme="@style/QplanningTextDescriptionPlan"/>
 
         <TextView
             android:id="@+id/hour_1"
@@ -112,10 +106,7 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="11sp"
-            android:paddingLeft="10dp"
-            android:paddingStart="10dp"
+            android:theme="@style/QplanningTextPlan"
             android:text="@string/upcoming_title_2"/>
 
         <TextView
@@ -126,11 +117,8 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:textSize="11sp"
-            android:paddingLeft="10dp"
-            android:paddingStart="10dp"
             android:text="@string/upcoming_description_2"
-            android:textColor="@color/colorDescription"/>
+            android:theme="@style/QplanningTextDescriptionPlan"/>
 
         <TextView
             android:id="@+id/hour_2"
@@ -185,11 +173,8 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="11sp"
-            android:paddingLeft="10dp"
-            android:paddingStart="10dp"
-            android:text="@string/upcoming_title_3"/>
+            android:text="@string/upcoming_title_3"
+            android:theme="@style/QplanningTextPlan"/>
 
         <TextView
             android:id="@+id/description_3"
@@ -199,11 +184,8 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:textSize="11sp"
-            android:paddingLeft="10dp"
-            android:paddingStart="10dp"
             android:text="@string/upcoming_description_3"
-            android:textColor="@color/colorDescription"/>
+            android:theme="@style/QplanningTextDescriptionPlan"/>
 
         <TextView
             android:id="@+id/hour_3"

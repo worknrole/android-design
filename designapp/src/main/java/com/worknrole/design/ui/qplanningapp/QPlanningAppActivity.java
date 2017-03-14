@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.worknrole.design.R;
-import com.worknrole.design.ui.qplanningapp.view.QplanningappLayout;
+import com.worknrole.design.ui.qplanningapp.view.QplanningappViewPager;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,7 +30,7 @@ public class QPlanningAppActivity extends AppCompatActivity {
     FloatingActionButton mActionButton;
 
     @BindView(R.id.view_pager)
-    QplanningappLayout mLayout;
+    QplanningappViewPager mLayout;
 
     @BindView(R.id.line_slide)
     View mSlideLine;
@@ -77,6 +77,10 @@ public class QPlanningAppActivity extends AppCompatActivity {
 
 
     //region Initializer
+
+    /**
+     * Initialize all elements
+     */
     private void initialize() {
         setSupportActionBar(mToolbar);
 
