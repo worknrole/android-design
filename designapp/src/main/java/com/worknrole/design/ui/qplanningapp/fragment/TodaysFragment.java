@@ -3,6 +3,7 @@ package com.worknrole.design.ui.qplanningapp.fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +11,11 @@ import android.view.ViewGroup;
 
 import com.worknrole.design.R;
 import com.worknrole.design.ui.qplanningapp.adapter.CalendarAdapterDelegate;
+import com.worknrole.design.ui.qplanningapp.adapter.TodayAdapterDelegate;
+import com.worknrole.design.ui.qplanningapp.adapter.UpcomingAdapterDelegate;
 import com.worknrole.design.ui.qplanningapp.item.CalendarItem;
+import com.worknrole.design.ui.qplanningapp.item.TodayItem;
+import com.worknrole.design.ui.qplanningapp.item.UpcomingItem;
 import com.worknrole.framework.view.recyclerview.adapter.WNRAdapter;
 import com.worknrole.framework.view.recyclerview.item.WNRItem;
 
@@ -28,7 +33,10 @@ public class TodaysFragment extends Fragment {
 
     //region Properties
     @BindView(R.id.recycler_view_calendar)
-    RecyclerView mRecyclerView;
+    RecyclerView mRecyclerViewCalendar;
+
+    @BindView(R.id.recycler_view_plan)
+    RecyclerView mRecyclerViewPlan;
     //endregion
 
 
@@ -45,10 +53,11 @@ public class TodaysFragment extends Fragment {
 
     //region Initializer
     private void initialize() {
+        // Create Calendar
         WNRAdapter adapter = new WNRAdapter();
         adapter.addAdapterDelegate(new CalendarAdapterDelegate());
-        mRecyclerView.setAdapter(adapter);
-        mRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), 7));
+        mRecyclerViewCalendar.setAdapter(adapter);
+        mRecyclerViewCalendar.setLayoutManager(new GridLayoutManager(getContext(), 7));
 
         List<WNRItem> items = new ArrayList<>();
         items.add(new CalendarItem("S"));
@@ -69,6 +78,20 @@ public class TodaysFragment extends Fragment {
         }
 
         adapter.addItems(items);
+
+
+
+        // Create Plan
+        WNRAdapter adapterPlan = new WNRAdapter();
+        adapterPlan.addAdapterDelegate(new TodayAdapterDelegate());
+        adapterPlan.addAdapterDelegate(new UpcomingAdapterDelegate());
+        mRecyclerViewPlan.setAdapter(adapterPlan);
+        mRecyclerViewPlan.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        List<WNRItem> itemsPlan = new ArrayList<>();
+        itemsPlan.add(new TodayItem());
+        itemsPlan.add(new UpcomingItem());
+        adapterPlan.addItems(itemsPlan);
     }
     //endregion
 }

@@ -134,8 +134,24 @@ public class QplanningappLayout extends ViewPager {
         });
     }
 
-    public void setSlideLine(View line) {
+    public void setMenu(View line, View todayBtn, View socialBtn) {
         mLine = line;
+
+        todayBtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setCurrentItem(0);
+            }
+        });
+
+        socialBtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setCurrentItem(1);
+            }
+        });
+
+
     }
 
     public void setToolbarTitle(TextView title) {

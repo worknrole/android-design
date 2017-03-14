@@ -6,7 +6,8 @@ import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.widget.LinearLayout;
+import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.worknrole.design.R;
@@ -18,21 +19,21 @@ import java.util.Arrays;
 import butterknife.BindArray;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * Created by worknrole on 10/03/17.
  */
 
-public class CalendarItemView extends LinearLayout implements ItemViewUpdater<CalendarItem> {
+public class CalendarItemView extends RelativeLayout implements ItemViewUpdater<CalendarItem> {
 
     @BindView(R.id.title)
     TextView mTitle;
 
+    @BindView(R.id.circle_day)
+    View mCircleDay;
+
     @BindArray(R.array.calendar_day)
     String[] mCalendarDay;
-
-    private boolean mIsNumeric;
 
     public CalendarItemView(Context context) {
         super(context);
@@ -63,16 +64,11 @@ public class CalendarItemView extends LinearLayout implements ItemViewUpdater<Ca
             String day = item.getTitle();
             mTitle.setText(day);
             if (Arrays.asList(mCalendarDay).contains(day)) {
-                mIsNumeric = true;
                 mTitle.setTypeface(null, Typeface.BOLD);
             }
-        }
-    }
-
-    @OnClick(R.id.calendar_item)
-    public void onClick() {
-        if (!mIsNumeric) {
-            //TODO select
+            if (day.equalsIgnoreCase("20")) {
+                mCircleDay.setVisibility(VISIBLE);
+            }
         }
     }
 }

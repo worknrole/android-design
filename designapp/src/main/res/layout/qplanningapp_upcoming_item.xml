@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:paddingBottom="15dp"
+            android:text="@string/qplanningapp_upcoming_title"/>
+
+        <com.worknrole.framework.view.shape.CircleView
+            android:id="@+id/circle_1"
+            android:layout_below="@id/title"
+            android:layout_width="0dp"
+            app:layout_widthPercent="15%"
+            android:layout_height="30dp"
+            app:circleColor="#ffb269"/>
+
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_toRightOf="@id/circle_1"
+            android:layout_toEndOf="@id/circle_1"
+            android:layout_below="@id/title"
+            android:layout_width="0dp"
+            app:layout_widthPercent="65%"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/upcoming_title_1"/>
+
+        <TextView
+            android:id="@+id/description_1"
+            android:layout_toRightOf="@id/circle_1"
+            android:layout_toEndOf="@id/circle_1"
+            android:layout_below="@id/title_1"
+            android:layout_width="0dp"
+            app:layout_widthPercent="65%"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/upcoming_description_1"
+            android:textColor="@color/colorDescription"/>
+
+        <TextView
+            android:id="@+id/hour_1"
+            android:layout_below="@id/title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:gravity="right|end"
+            android:text="@string/upcoming_hour_1"/>
+
+        <TextView
+            android:id="@+id/urgent_1"
+            android:layout_below="@id/hour_1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:gravity="right|end"
+            android:text="@string/upcoming_medium"
+            android:textColor="@color/colorDescription"/>
+
+
+        <LinearLayout
+            android:id="@+id/hr_1"
+            android:layout_below="@id/circle_1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e1e1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+
+
+        <com.worknrole.framework.view.shape.CircleView
+            android:id="@+id/circle_2"
+            android:layout_below="@id/hr_1"
+            android:layout_width="0dp"
+            app:layout_widthPercent="15%"
+            android:layout_height="30dp"
+            app:circleColor="#ff75b4"/>
+
+        <TextView
+            android:id="@+id/title_2"
+            android:layout_toRightOf="@id/circle_2"
+            android:layout_toEndOf="@id/circle_2"
+            android:layout_below="@id/hr_1"
+            android:layout_width="0dp"
+            app:layout_widthPercent="65%"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/upcoming_title_2"/>
+
+        <TextView
+            android:id="@+id/description_2"
+            android:layout_toRightOf="@id/circle_2"
+            android:layout_toEndOf="@id/circle_2"
+            android:layout_below="@id/title_2"
+            android:layout_width="0dp"
+            app:layout_widthPercent="65%"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/upcoming_description_2"
+            android:textColor="@color/colorDescription"/>
+
+        <TextView
+            android:id="@+id/hour_2"
+            android:layout_below="@id/hr_1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:gravity="right|end"
+            android:text="@string/upcoming_hour_2"/>
+
+        <TextView
+            android:id="@+id/urgent_2"
+            android:layout_below="@id/hour_2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:gravity="right|end"
+            android:text="@string/today_urgent"
+            android:textColor="@color/colorDescription"/>
+
+
+        <LinearLayout
+            android:id="@+id/hr_2"
+            android:layout_below="@id/circle_2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e1e1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+
+
+        <com.worknrole.framework.view.shape.CircleView
+            android:id="@+id/circle_3"
+            android:layout_below="@id/hr_2"
+            android:layout_width="0dp"
+            app:layout_widthPercent="15%"
+            android:layout_height="30dp"
+            app:circleColor="#67c2ff"/>
+
+        <TextView
+            android:id="@+id/title_3"
+            android:layout_toRightOf="@id/circle_3"
+            android:layout_toEndOf="@id/circle_3"
+            android:layout_below="@id/hr_2"
+            android:layout_width="0dp"
+            app:layout_widthPercent="65%"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/upcoming_title_3"/>
+
+        <TextView
+            android:id="@+id/description_3"
+            android:layout_toRightOf="@id/circle_3"
+            android:layout_toEndOf="@id/circle_3"
+            android:layout_below="@id/title_3"
+            android:layout_width="0dp"
+            app:layout_widthPercent="65%"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/upcoming_description_3"
+            android:textColor="@color/colorDescription"/>
+
+        <TextView
+            android:id="@+id/hour_3"
+            android:layout_below="@id/hr_2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:gravity="right|end"
+            android:text="@string/upcoming_hour_3"/>
+
+        <TextView
+            android:id="@+id/urgent_3"
+            android:layout_below="@id/hour_3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:gravity="right|end"
+            android:text="@string/today_urgent"
+            android:textColor="@color/colorDescription"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.v7.widget.CardView>

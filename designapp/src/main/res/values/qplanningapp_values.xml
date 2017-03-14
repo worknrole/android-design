@@ -17,6 +17,24 @@
     <string name="today_nb_plans">4 plans today</string>
     <string name="today_day">20</string>
     <string name="today_month">March</string>
+    <string name="today">Today</string>
+    <string name="today_hour">5:00 PM</string>
+    <string name="today_urgent">Urgent</string>
+    <string name="upcoming_medium">Medium</string>
+    <string name="today_title">Buy Grocery Items</string>
+    <string name="today_date">5:00 - 6:00 pm</string>
+    <string name="today_location">Walmart, CA</string>
+    <string name="today_duration">30 min drive</string>
+    <string name="qplanningapp_upcoming_title">Upcoming Plan (3)</string>
+    <string name="upcoming_title_1">Discuss with Adrian Begi</string>
+    <string name="upcoming_title_2">Video Calling with Boss</string>
+    <string name="upcoming_title_3">UEFA Champion League Final</string>
+    <string name="upcoming_description_1">Call Adrian at the right time</string>
+    <string name="upcoming_description_2">I Hate but have to tak to my ceo...</string>
+    <string name="upcoming_description_3">Real Madrid vs Arsenal</string>
+    <string name="upcoming_hour_1">6:00 pm</string>
+    <string name="upcoming_hour_2">9:27 pm</string>
+    <string name="upcoming_hour_3">1:00 am</string>
     <string name="social_name_1">Scarlett Johansson</string>
     <string name="social_name_2">Robert Downey Jr.</string>
     <string name="social_name_3">Chris Evans</string>
@@ -48,6 +66,8 @@
     <color name="colorBackgroundQPA">@color/greyLight</color>
     <color name="colorCircleDay">#fe70cb</color>
     <color name="colorBarIcon">#b9b9b9</color>
+    <color name="colorCircleDayItem">#a784ee</color>
+    <color name="colorDescription">#aab6bc</color>
 
 
     <!-- Dimension -->

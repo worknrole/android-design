@@ -35,6 +35,12 @@ public class QPlanningAppActivity extends AppCompatActivity {
     @BindView(R.id.line_slide)
     View mSlideLine;
 
+    @BindView(R.id.todays_btn)
+    View mTodayBtn;
+
+    @BindView(R.id.social_btn)
+    View mSocialBtn;
+
     @BindView(R.id.toolbar_title)
     TextView mToolbarTitle;
 
@@ -79,7 +85,7 @@ public class QPlanningAppActivity extends AppCompatActivity {
         mDrawerLayout.addDrawerListener(mDrawerToggle);
 
         mLayout.setEditionBtn(mActionButton);
-        mLayout.setSlideLine(mSlideLine);
+        mLayout.setMenu(mSlideLine, mTodayBtn, mSocialBtn);
         mLayout.setToolbarTitle(mToolbarTitle);
     }
     //endregion
