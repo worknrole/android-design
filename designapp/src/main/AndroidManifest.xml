@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.worknrole.design">
+          package="com.worknrole.design">
 
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        
+
+        <activity
+            android:name=".home.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".ui.userprofileconcept.UPCActivity"
             android:label="@string/title_activity_upc"
             android:screenOrientation="portrait"
-            android:theme="@style/UPCTheme">
+            android:theme="@style/UPCTheme"/>
 
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
+        <activity android:name=".ui.qplanningapp.QPlanningAppActivity"
+                  android:label="@string/qplanningapp_title_toolbar"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/QplanningappTheme">
         </activity>
-
     </application>
 
 </manifest>

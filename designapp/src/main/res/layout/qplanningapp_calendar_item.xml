@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.worknrole.design.ui.qplanningapp.view.CalendarItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calendar_item"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:gravity="center">
+
+    <com.worknrole.framework.view.shape.CircleView
+        android:id="@+id/circle_day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:circleColor="@color/colorCircleDayItem"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/unknown"
+        android:textColor="@color/white"/>
+
+</com.worknrole.design.ui.qplanningapp.view.CalendarItemView>

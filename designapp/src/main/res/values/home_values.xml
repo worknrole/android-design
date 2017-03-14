@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Strings -->
+    <string name="title_activity_home">android-design</string>
+    <string name="unknown">Unknown</string>
+    <string name="yes">Yes!</string>
+
+
+    <!-- Colors -->
+    <color name="greyLight">#f7f8fb</color>
+    <color name="colorHomeItem">#90caf9</color>
+
+
+    <!-- Dimensions -->
+    <dimen name="bottomBarSize">80dp</dimen>
+</resources>
