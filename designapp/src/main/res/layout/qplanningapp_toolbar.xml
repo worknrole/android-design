@@ -19,7 +19,7 @@
             android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_ab_qpa"
+            android:text="@string/qplanningapp_title_toolbar"
             android:textSize="21sp"
             android:textColor="@color/white"/>
 

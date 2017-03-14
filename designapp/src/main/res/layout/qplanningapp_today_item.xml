@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAllCaps="true"
-                    android:text="@string/today"
+                    android:text="@string/qplanningapp_today"
                     android:textStyle="bold"
                     android:textSize="12sp"/>
 
@@ -46,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:textAllCaps="true"
                     android:textStyle="bold"
-                    android:text="@string/today_hour"
+                    android:text="@string/qplanningapp_today_hour"
                     android:textSize="12sp"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"/>
@@ -55,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAllCaps="true"
-                    android:text="@string/today_urgent"
+                    android:text="@string/qplanningapp_today_urgent"
                     android:textSize="10sp"
                     android:textColor="@color/colorDescription"/>
 
@@ -73,28 +73,28 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/today_title"
+                    android:text="@string/qplanningapp_today_title"
                     android:textStyle="bold"
                     android:textSize="12sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/today_date"
+                    android:text="@string/qplanningapp_today_date"
                     android:textSize="11sp"
                     android:textColor="@color/colorDescription"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/today_location"
+                    android:text="@string/qplanningapp_today_location"
                     android:textSize="11sp"
                     android:textColor="@color/colorDescription"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/today_duration"
+                    android:text="@string/qplanningapp_today_duration"
                     android:textSize="11sp"
                     android:textColor="@color/colorDescription"/>
 

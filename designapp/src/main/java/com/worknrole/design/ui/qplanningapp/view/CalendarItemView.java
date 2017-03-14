@@ -35,7 +35,7 @@ public class CalendarItemView extends RelativeLayout implements ItemViewUpdater<
     @BindView(R.id.circle_day)
     View mCircleDay;
 
-    @BindArray(R.array.calendar_day)
+    @BindArray(R.array.qplanningapp_calendar_day)
     String[] mCalendarDay;
     //endregion
 

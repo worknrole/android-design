@@ -80,7 +80,7 @@ public class QplanningappViewPager extends ViewPager {
      */
     private ViewPager.OnPageChangeListener createOnPageChangeListener() {
         return new ViewPager.OnPageChangeListener() {
-            private int maxTranslationX = getResources().getDimensionPixelOffset(R.dimen.slide_line_max_translation_X);
+            private int maxTranslationX = getResources().getDimensionPixelOffset(R.dimen.qplanningapp_slide_line_max_translation_X);
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 if (mLine != null) {
@@ -101,7 +101,7 @@ public class QplanningappViewPager extends ViewPager {
 
                 if (mToolbarTitle != null) {
                     mToolbarTitle.setText(getResources().getString(
-                            position == 0 ? R.string.title_ab_qpa : R.string.title_ab_2_qpa));
+                            position == 0 ? R.string.qplanningapp_title_toolbar : R.string.qplanningapp_title_toolbar_2));
                 }
 
                 if (mEditionBtn != null) {

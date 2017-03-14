@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="QPATheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="QplanningappTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">#6c76db</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -28,47 +28,47 @@
 
 
     <!-- Strings -->
-    <string name="title_activity_qpa">QPlanning App</string>
-    <string name="title_ab_qpa">Todays Plan</string>
-    <string name="title_ab_2_qpa">Social Plan</string>
-    <string name="today_nb_plans">4 plans today</string>
-    <string name="today_day">20</string>
-    <string name="today_month">March</string>
-    <string name="today">Today</string>
-    <string name="today_hour">5:00 PM</string>
-    <string name="today_urgent">Urgent</string>
-    <string name="upcoming_medium">Medium</string>
-    <string name="today_title">Buy Grocery Items</string>
-    <string name="today_date">5:00 - 6:00 pm</string>
-    <string name="today_location">Walmart, CA</string>
-    <string name="today_duration">30 min drive</string>
+    <string name="qplanningapp_title_activity">QPlanning App</string>
+    <string name="qplanningapp_title_toolbar">Todays Plan</string>
+    <string name="qplanningapp_title_toolbar_2">Social Plan</string>
+    <string name="qplanningapp_today_nb_plans">4 plans today</string>
+    <string name="qplanningapp_today_day">20</string>
+    <string name="qplanningapp_today_month">March</string>
+    <string name="qplanningapp_today">Today</string>
+    <string name="qplanningapp_today_hour">5:00 PM</string>
+    <string name="qplanningapp_today_urgent">Urgent</string>
+    <string name="qplanningapp_upcoming_medium">Medium</string>
+    <string name="qplanningapp_today_title">Buy Grocery Items</string>
+    <string name="qplanningapp_today_date">5:00 - 6:00 pm</string>
+    <string name="qplanningapp_today_location">Walmart, CA</string>
+    <string name="qplanningapp_today_duration">30 min drive</string>
     <string name="qplanningapp_upcoming_title">Upcoming Plan (3)</string>
-    <string name="upcoming_title_1">Discuss with Adrian Begi</string>
-    <string name="upcoming_title_2">Video Calling with Boss</string>
-    <string name="upcoming_title_3">UEFA Champion League Final</string>
-    <string name="upcoming_description_1">Call Adrian at the right time</string>
-    <string name="upcoming_description_2">I Hate but have to tak to my ceo...</string>
-    <string name="upcoming_description_3">Real Madrid vs Arsenal</string>
-    <string name="upcoming_hour_1">6:00 pm</string>
-    <string name="upcoming_hour_2">9:27 pm</string>
-    <string name="upcoming_hour_3">1:00 am</string>
-    <string name="social_name_1">Scarlett Johansson</string>
-    <string name="social_name_2">Robert Downey Jr.</string>
-    <string name="social_name_3">Chris Evans</string>
-    <string name="social_name_4">Chris Hemsworth</string>
-    <string name="social_name_5">Gwyneth Paltrow</string>
-    <string name="social_description_1">Planning for new event at Vegas Club with buffet dinner on coming week.</string>
-    <string name="social_description_2">We are planning to visit Hollywood city for have some fun...</string>
-    <string name="social_description_3">Hey! I am organising a school fund for help poor buying winter clothes...</string>
-    <string name="social_description_4">I am going to arrange a rock metal band party tomorrow. Let me know...</string>
-    <string name="social_description_5">I am bored to see all above plans! Lets go to moon and have some adventure</string>
-    <string name="social_date_1">just now</string>
-    <string name="social_date_2">2 hrs</string>
-    <string name="social_date_3">7 hrs</string>
-    <string name="social_date_4">1 day</string>
-    <string name="social_date_5">4 days</string>
+    <string name="qplanningapp_upcoming_title_1">Discuss with Adrian Begi</string>
+    <string name="qplanningapp_upcoming_title_2">Video Calling with Boss</string>
+    <string name="qplanningapp_upcoming_title_3">UEFA Champion League Final</string>
+    <string name="qplanningapp_upcoming_description_1">Call Adrian at the right time</string>
+    <string name="qplanningapp_upcoming_description_2">I Hate but have to tak to my ceo...</string>
+    <string name="qplanningapp_upcoming_description_3">Real Madrid vs Arsenal</string>
+    <string name="qplanningapp_upcoming_hour_1">6:00 pm</string>
+    <string name="qplanningapp_upcoming_hour_2">9:27 pm</string>
+    <string name="qplanningapp_upcoming_hour_3">1:00 am</string>
+    <string name="qplanningapp_social_name_1">Scarlett Johansson</string>
+    <string name="qplanningapp_social_name_2">Robert Downey Jr.</string>
+    <string name="qplanningapp_social_name_3">Chris Evans</string>
+    <string name="qplanningapp_social_name_4">Chris Hemsworth</string>
+    <string name="qplanningapp_social_name_5">Gwyneth Paltrow</string>
+    <string name="qplanningapp_social_description_1">Planning for new event at Vegas Club with buffet dinner on coming week.</string>
+    <string name="qplanningapp_social_description_2">We are planning to visit Hollywood city for have some fun...</string>
+    <string name="qplanningapp_social_description_3">Hey! I am organising a school fund for help poor buying winter clothes...</string>
+    <string name="qplanningapp_social_description_4">I am going to arrange a rock metal band party tomorrow. Let me know...</string>
+    <string name="qplanningapp_social_description_5">I am bored to see all above plans! Lets go to moon and have some adventure</string>
+    <string name="qplanningapp_social_date_1">just now</string>
+    <string name="qplanningapp_social_date_2">2 hrs</string>
+    <string name="qplanningapp_social_date_3">7 hrs</string>
+    <string name="qplanningapp_social_date_4">1 day</string>
+    <string name="qplanningapp_social_date_5">4 days</string>
 
-    <string-array name="calendar_day">
+    <string-array name="qplanningapp_calendar_day">
         <item>S</item>
         <item>M</item>
         <item>T</item>
@@ -89,8 +89,8 @@
 
 
     <!-- Dimension -->
-    <dimen name="social_recycler_view_margin">15dp</dimen>
-    <dimen name="slide_line_max_translation_X">60dp</dimen>
+    <dimen name="qplanningapp_social_recycler_view_margin">15dp</dimen>
+    <dimen name="qplanningapp_slide_line_max_translation_X">60dp</dimen>
     <dimen name="qplanningapp_margin_for_slide">3dp</dimen>
     <dimen name="qplanningapp_slide_menu">90dp</dimen>
     <dimen name="qplanningapp_circle_day_x">23dp</dimen>

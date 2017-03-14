@@ -46,7 +46,7 @@ public class HomeActivity extends AppCompatActivity {
 
         List<WNRItem> items = new ArrayList<>();
         items.add(new HomeItem(getString(R.string.title_activity_upc), UPCActivity.class));
-        items.add(new HomeItem(getString(R.string.title_activity_qpa), QPlanningAppActivity.class));
+        items.add(new HomeItem(getString(R.string.qplanningapp_title_activity), QPlanningAppActivity.class));
         adapter.addItems(items);
     }
     //endregion

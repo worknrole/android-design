@@ -40,7 +40,7 @@
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
             android:theme="@style/QplanningTextPlan"
-            android:text="@string/upcoming_title_1"/>
+            android:text="@string/qplanningapp_upcoming_title_1"/>
 
         <TextView
             android:id="@+id/description_1"
@@ -50,7 +50,7 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:text="@string/upcoming_description_1"
+            android:text="@string/qplanningapp_upcoming_description_1"
             android:theme="@style/QplanningTextDescriptionPlan"/>
 
         <TextView
@@ -63,7 +63,7 @@
             android:textStyle="bold"
             android:textSize="11sp"
             android:gravity="right|end"
-            android:text="@string/upcoming_hour_1"/>
+            android:text="@string/qplanningapp_upcoming_hour_1"/>
 
         <TextView
             android:id="@+id/urgent_1"
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:textSize="11sp"
             android:gravity="right|end"
-            android:text="@string/upcoming_medium"
+            android:text="@string/qplanningapp_upcoming_medium"
             android:textColor="@color/colorDescription"/>
 
 
@@ -107,7 +107,7 @@
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
             android:theme="@style/QplanningTextPlan"
-            android:text="@string/upcoming_title_2"/>
+            android:text="@string/qplanningapp_upcoming_title_2"/>
 
         <TextView
             android:id="@+id/description_2"
@@ -117,7 +117,7 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:text="@string/upcoming_description_2"
+            android:text="@string/qplanningapp_upcoming_description_2"
             android:theme="@style/QplanningTextDescriptionPlan"/>
 
         <TextView
@@ -130,7 +130,7 @@
             android:textStyle="bold"
             android:textSize="11sp"
             android:gravity="right|end"
-            android:text="@string/upcoming_hour_2"/>
+            android:text="@string/qplanningapp_upcoming_hour_2"/>
 
         <TextView
             android:id="@+id/urgent_2"
@@ -141,7 +141,7 @@
             android:layout_height="wrap_content"
             android:textSize="11sp"
             android:gravity="right|end"
-            android:text="@string/today_urgent"
+            android:text="@string/qplanningapp_today_urgent"
             android:textColor="@color/colorDescription"/>
 
 
@@ -173,7 +173,7 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:text="@string/upcoming_title_3"
+            android:text="@string/qplanningapp_upcoming_title_3"
             android:theme="@style/QplanningTextPlan"/>
 
         <TextView
@@ -184,7 +184,7 @@
             android:layout_width="0dp"
             app:layout_widthPercent="65%"
             android:layout_height="wrap_content"
-            android:text="@string/upcoming_description_3"
+            android:text="@string/qplanningapp_upcoming_description_3"
             android:theme="@style/QplanningTextDescriptionPlan"/>
 
         <TextView
@@ -197,7 +197,7 @@
             android:textStyle="bold"
             android:textSize="11sp"
             android:gravity="right|end"
-            android:text="@string/upcoming_hour_3"/>
+            android:text="@string/qplanningapp_upcoming_hour_3"/>
 
         <TextView
             android:id="@+id/urgent_3"
@@ -208,7 +208,7 @@
             android:layout_height="wrap_content"
             android:textSize="11sp"
             android:gravity="right|end"
-            android:text="@string/today_urgent"
+            android:text="@string/qplanningapp_today_urgent"
             android:textColor="@color/colorDescription"/>
 
     </android.support.percent.PercentRelativeLayout>

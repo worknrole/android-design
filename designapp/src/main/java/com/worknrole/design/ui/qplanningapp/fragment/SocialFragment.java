@@ -61,20 +61,20 @@ public class SocialFragment extends Fragment {
             public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
                 int currentChildPosition = parent.getChildAdapterPosition(view);
                 if (currentChildPosition == 0) {
-                    outRect.top = getContext().getResources().getDimensionPixelOffset(R.dimen.social_recycler_view_margin);
+                    outRect.top = getContext().getResources().getDimensionPixelOffset(R.dimen.qplanningapp_social_recycler_view_margin);
                 }
                 else if (currentChildPosition == parent.getAdapter().getItemCount() - 1) {
-                    outRect.bottom = getContext().getResources().getDimensionPixelOffset(R.dimen.social_recycler_view_margin);
+                    outRect.bottom = getContext().getResources().getDimensionPixelOffset(R.dimen.qplanningapp_social_recycler_view_margin);
                 }
             }
         });
 
         List<WNRItem> items = new ArrayList<>();
-        items.add(new SocialItem(getString(R.string.social_name_1), R.drawable.img_scarlette_johanson, getString(R.string.social_description_1), getString(R.string.social_date_1)));
-        items.add(new SocialItem(getString(R.string.social_name_2), R.drawable.img_robert_downey_jr, getString(R.string.social_description_2), getString(R.string.social_date_2)));
-        items.add(new SocialItem(getString(R.string.social_name_3), R.drawable.img_chris_evans, getString(R.string.social_description_3), getString(R.string.social_date_3)));
-        items.add(new SocialItem(getString(R.string.social_name_4), R.drawable.img_chris_hemsworth, getString(R.string.social_description_4), getString(R.string.social_date_4)));
-        items.add(new SocialItem(getString(R.string.social_name_5), R.drawable.img_gwyneth_paltrow, getString(R.string.social_description_5), getString(R.string.social_date_5)));
+        items.add(new SocialItem(getString(R.string.qplanningapp_social_name_1), R.drawable.img_scarlette_johanson, getString(R.string.qplanningapp_social_description_1), getString(R.string.qplanningapp_social_date_1)));
+        items.add(new SocialItem(getString(R.string.qplanningapp_social_name_2), R.drawable.img_robert_downey_jr, getString(R.string.qplanningapp_social_description_2), getString(R.string.qplanningapp_social_date_2)));
+        items.add(new SocialItem(getString(R.string.qplanningapp_social_name_3), R.drawable.img_chris_evans, getString(R.string.qplanningapp_social_description_3), getString(R.string.qplanningapp_social_date_3)));
+        items.add(new SocialItem(getString(R.string.qplanningapp_social_name_4), R.drawable.img_chris_hemsworth, getString(R.string.qplanningapp_social_description_4), getString(R.string.qplanningapp_social_date_4)));
+        items.add(new SocialItem(getString(R.string.qplanningapp_social_name_5), R.drawable.img_gwyneth_paltrow, getString(R.string.qplanningapp_social_description_5), getString(R.string.qplanningapp_social_date_5)));
         adapter.addItems(items);
     }
     //endregion

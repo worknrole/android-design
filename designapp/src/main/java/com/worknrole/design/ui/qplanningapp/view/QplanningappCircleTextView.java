@@ -47,14 +47,14 @@ public class QplanningappCircleTextView extends CircleView {
 
         paint.setTextSize(getResources().getDimensionPixelSize(R.dimen.qplanningapp_circle_day_size));
         canvas.drawText(
-                getResources().getString(R.string.today_day),
+                getResources().getString(R.string.qplanningapp_today_day),
                 getResources().getDimensionPixelOffset(R.dimen.qplanningapp_circle_day_x),
                 getResources().getDimensionPixelOffset(R.dimen.qplanningapp_circle_day_y),
                 paint);
 
         paint.setTextSize(getResources().getDimensionPixelSize(R.dimen.qplanningapp_circle_month_size));
         canvas.drawText(
-                getResources().getString(R.string.today_month),
+                getResources().getString(R.string.qplanningapp_today_month),
                 getResources().getDimensionPixelOffset(R.dimen.qplanningapp_circle_month_x),
                 getResources().getDimensionPixelOffset(R.dimen.qplanningapp_circle_month_y),
                 paint);

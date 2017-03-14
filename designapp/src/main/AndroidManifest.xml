@@ -26,9 +26,9 @@
             android:theme="@style/UPCTheme"/>
 
         <activity android:name=".ui.qplanningapp.QPlanningAppActivity"
-                  android:label="@string/title_ab_qpa"
+                  android:label="@string/qplanningapp_title_toolbar"
                   android:screenOrientation="portrait"
-                  android:theme="@style/QPATheme">
+                  android:theme="@style/QplanningappTheme">
         </activity>
     </application>
 
